@@ -46,10 +46,12 @@ export class Utility {
         const classAttr = await priceItem.getAttribute('class');
         console.log(`Number of items added to the cart (${itemCount} items):`, classAttr);
         await page.waitForLoadState();
+        await page.waitForLoadState('networkidle');
         await page.screenshot({
-            path: `../test/playwright-report/book-${itemCount}-cart.png`,
-            fullPage: true,
-        });
+        path: path.join(__dirname, '../test/playwright-report', `book-${itemCount}-cart.png`),
+        fullPage: true,
+         });
+
         console.log("Books are successfully added to Cart");
         return classAttr;
     }

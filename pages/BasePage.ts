@@ -1,6 +1,6 @@
 import { Page, } from 'playwright';
 import { expect } from '@playwright/test';
-import { Utility } from '../utilities/Utility';
+import { Utility } from '../Utilities/Utility';
 
 export class BasePage {
     protected page: Page;

@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import { BrowserContext } from '@playwright/test';
 import { HomePage } from '../pages/HomePage';
-import { Utility } from '../utilities/Utility';
+import { Utility } from '../Utilities/Utility';
 import { ProductDetails } from '../pages/ProductDetails';
 
 /*@Author Demappa Banashetti 

@@ -30,7 +30,7 @@ Download or clone the code from GitHub using the following URL:
 
 git clone https://github.com/Demappa/PlaywrightFlipkart.git
 
-2. 📂 Navigate to Project Directory
+2. Navigate to Project Directory
 
 Copy the downloaded/cloned project to your desired location, for example:
 

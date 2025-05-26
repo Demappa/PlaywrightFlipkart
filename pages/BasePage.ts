@@ -6,11 +6,19 @@ export class BasePage {
     protected page: Page;
     readonly baseUrl: string = 'https://www.flipkart.com';
 
-    private readonly flipkartLogo = "//a[@class='YLCOuy']";
+    private  _flipkartLogo = "//a[@class='YLCOuy']";
 
     constructor(page: Page) {
         this.page = page;
     }
+
+  public get flipkartLogo(): string {
+    return this._flipkartLogo;
+  }
+
+  public set flipkartLogo(selector: string) {
+    this._flipkartLogo = selector;
+  }
 
     async navigateToHomePage() {
         console.log('Navigating to Flipkart home page...');
